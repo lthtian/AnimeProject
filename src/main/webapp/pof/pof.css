@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    background-color:#F7F8F9;
+  }
+
+#inserted-html {
+    width: 100%; /* 确保容器占据全屏宽度 */
+    margin: 0 auto; /* 居中 */
+    padding: 0; /* 消除可能的默认内边距 */
+    box-sizing: border-box; /* 确保宽度计算包含内边距和边框 */
+  }
+
+  .container {
+    position: absolute;
+    top: 15%; /* 控制整体的垂直偏移 */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* 整个历史列表样式 */
+
+  .container ul {
+    width: 60vw; /* 列表宽度 */
+    list-style: none; /* 去掉默认符号 */
+    padding: 0; /* 去掉内边距 */
+    margin: 0; /* 去掉外边距 */
+  }
+
+  #header{
+    border: solid 1px #F7F8F9;
+    width: 100%; /* 列表项宽度与父级保持一致 */
+    margin: 10px auto; /* 自动上下居中并设置间距 */
+    padding: 10px; /* 内边距，增加可点击区域 */
+    background-color: #F7F8F9;
+
+    position: relative;
+    display: flex;
+
+    height: 15vh;
+  }
+
+  #header img{
+      width: 3.3vw;
+      height: 3.3vw;
+      position: relative;
+      left: 7%;
+  }
+
+  #header h1{
+    position: relative;
+    left: 9.5%;
+    top: 2px;
+  }
+
+  #header::after{
+
+    content: "";
+    position: absolute;
+    left: 1.4%;
+    top: 7%;
+ 
+    width: 0vw;
+    height: 15vh;
+    border: dashed 1px #fa90a4;
+  }
+
+  #header::before{
+
+    content: "";
+    position: absolute;
+    left: 0.7%;
+    top: 28%;
+ 
+    z-index: 2;
+    width: 0.6vw;
+    height: 0.6vw;
+    
+    border: solid 3px #fff;
+    border-radius: 50%;
+    background-color: #fa90a4;
+  }
+
+  
+  .container li {
+    width: 100%; /* 列表项宽度与父级保持一致 */
+    
+    padding: 7px;
+    background-color: #F7F8F9;
+
+    position: relative;
+    height: 25vh;
+    display: flex;
+  }
+
+  .img_box{
+    width: 12.5%;
+    height: 100%;
+    left: 10%;
+    box-shadow: -10px 0 15px -5px rgba(0, 0, 0, 0.5); /* 左侧阴影 */
+    position: absolute;
+    cursor: pointer;
+  }
+
+  .img_box img{
+    width: 100%;
+    height: 100%;
+  }
+
+.container li a{
+    position: absolute;
+    left: 29%;
+    top: 17%;
+    font-size: 1.3em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+  .container li .p1{
+    position: absolute;
+    left: 29%;
+    top: 40%
+ }
+
+ .container li .p2{
+    position: absolute;
+    left: 29%;
+    top: 60%
+ }
+
+ .container li .p3{
+    position: absolute;
+    left: 29%;
+    top: 80%
+ }
+
+ .container li::after{
+
+    content: "";
+    position: absolute;
+    left: 1.5%;
+    top: 0;
+ 
+    width: 0vw;
+    height: 25vh;
+    border: dashed 1px #fa90a4;
+  }
+
+  .container li::before{
+
+    content: "";
+    position: absolute;
+    left: 0.8%;
+    top: 43%;
+ 
+    z-index: 2;
+    width: 0.6vw;
+    height: 0.6vw;
+    
+    border: solid 3px #fff;
+    border-radius: 50%;
+    background-color: #fa90a4;
+  }
+
+.enter{
+    position: absolute;
+    width: 3vw;
+    height: 3vw;
+
+    left: 80%;
+    top: 40%;
+
+    border-radius: 50%;
+
+    background-color: #F7F8F9;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+  .enter:hover{
+    background-color: #f6b3bf;
+    transform: scale(1.1);
+  }
+
+  .enter img{
+    position: relative;
+    top: 7%;
+    left: -2%;
+    width: 85%;
+    height: 85%;
+  }
+
+  .texts::before{
+    content: "";
+    position: absolute;
+    left: 26.5%;
+    top: 16%;
+
+    z-index: 2;
+    width: 0.5vh;
+    height: 78%;
+
+    background-color: #f6b3bf;
+
+  }
+
+  .texts::after{
+    content: "";
+    position: absolute;
+    left: 26%;
+    top: 16%;
+
+    z-index: 2;
+    width: 1.2vh;
+    height: 1.2vh;
+
+    border: solid 3px #f7a2b1;
+    border-radius: 50%;
+
+    background-color: #fff;
+  }

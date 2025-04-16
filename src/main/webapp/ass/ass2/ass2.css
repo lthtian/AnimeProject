@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #907a8f;
+    overflow: hidden;
+  }
+
+  .container {
+    position: relative;
+    
+    width: 100%;
+  }
+
+
+.slider{
+    position: relative;
+    left: 1vw;
+    top: 7vh;
+
+    border: 1px solid black;
+    border-radius: 0.7vw;
+
+    width: 27vw;
+    height: 92vh;
+    margin-left: 0.5vw;
+
+    background-color: #D2150F;
+    z-index: 5;
+}
+
+
+.slider-header{
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    z-index: 5;
+
+}
+
+.slider-header img{
+    width: 100%;
+    height: 81vh;
+    border-radius: 0.7vw 0.7vw 0 0;
+    z-index: 1;
+}
+
+.slider-footer{
+    position: relative;
+    display: flex;
+}
+
+.left{
+    position: relative;
+    top: 5vh;
+    left: 0vh;
+    list-style: none;
+    color: #fff;
+    display: flex;
+}
+
+.left li{
+    position: relative;
+    left: -14vw;
+    top: 1vh;
+    margin: 0.2vw;
+    margin-top: 1vh;
+    width: 0.7vw;
+    height: 0.7vw;
+    border-radius: 50%;
+    background-color: rgb(90, 96, 101);
+    border: 1px solid;
+
+    opacity: .5;
+}
+
+.left li.active{
+
+
+    background-color: black;
+    border: solid 1px #fff;
+    opacity: 1;
+}
+
+.left p{
+    margin-left: 4vh;
+    margin-top: 1vh;
+}
+
+#mytext{
+    color: #fff;
+    font-size: 2.5vh;
+    margin-top: 2vh;
+    width: 30vw;
+
+    text-shadow: 2px 2px 3px  #000;
+}
+
+.text{
+    position: relative;
+    margin-left: 1.3vw;
+    margin-top: 2vh;
+}
+
+.buttons{
+    position: relative;
+
+    width: 1.7vw;
+    height: 1.7vw;
+
+    top: 4vh;
+    right: 1vw;
+
+    opacity: .5;
+
+}
+
+.btnl{
+    right: 5.5vw;
+    overflow: hidden;
+}
+
+.btnl img{
+    width: 98%;
+    height: 98%;
+    margin-right: 2px;
+}
+
+.btnr{
+    right: 2.5vw;
+    top: -0.1vh;
+    overflow: hidden;
+}
+
+.btnr img{
+    width: 100%;
+    height: 100%;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+}
+
+#row1{
+    position: absolute;
+    top: 8.5vh;
+    right: 1vw;
+}
+
+#row2{
+    position: absolute;
+    top: 52.5vh;
+    right: 1vw;
+}
+
+.box{
+    width: 13vw;
+    height: 41.5vh;
+    border: 1px solid #feeddf;
+    border-radius: 0.7vw;
+    margin: 0.5vw;
+
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    text-shadow: 2px 2px 5px #000;
+
+    transition: all 0.3s ease;
+}
+
+.box img{
+    width: 100%;
+    height: 100%;
+}
+
+.p1{
+    position: absolute;
+    bottom: 0px;
+    left: 15px;
+    font-weight: bold;
+    color: #fff;
+
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.box:hover
+{
+    border-color: #feeddf;
+    box-shadow:  0 0 10px 1px #feeddf;
+    transform: scale(1.05);
+}
+
+.box:hover .p1{
+    opacity: 1;
+    transform: translateY(-50px);
+}
+
+.p2{
+    position: absolute;
+    bottom: -20px;
+    left: 15px;
+    color: #fff;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.box:hover .p2{
+    opacity: 1;
+    transform: translateY(-50px);
+}
+
+.p3{
+    position: absolute;
+    bottom: -40px;
+    left: 15px;
+    color: #fff;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.box:hover .p3{
+    opacity: 1;
+    transform: translateY(-50px);
+}
+
+#inserted-html {
+    width: 100%; /* 确保容器占据全屏宽度 */
+    margin: 0 auto; /* 居中 */
+    padding: 0; /* 消除可能的默认内边距 */
+    box-sizing: border-box; /* 确保宽度计算包含内边距和边框 */
+  }

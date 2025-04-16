@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    background-color:#f4bbc5;
+  }
+
+  .container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+
+  .box {
+    display: flex;
+    justify-content:space-between;
+
+    position: relative;
+    top: 15vh;
+    width: 55vw;
+    height: 70vh;
+    background-color: #fff;
+    border: solid 2px #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .left
+  {
+    border: solid 1px #fff;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .right
+  {
+    border: solid 1px #fff;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+
+  .register-title{
+    position: relative;
+    top: 20%;
+  }
+
+  .login-title{
+    position: relative;
+    top: 20%;
+  }
+
+  .input-box{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    top: 25%;
+
+    margin:5%;
+  }
+
+  .btn-box{
+    position: relative;
+    top: 30%;
+    display: flex;
+    align-items: center;
+  }
+
+  
+  input{
+    width: 17vw;
+    height: 6vh;
+    margin: 2%;
+
+    font-size: 1em;
+    border-radius: 4px;
+    border: solid 1px #b0cfe9;
+    padding-left: 10px;
+  }
+
+  input:focus{
+      color: #b0cfe9;
+      outline: none;
+  }
+
+  input:focus::placeholder{
+      opacity: 0;
+  }
+
+  button{
+    width: 5vw;
+    height: 5vh;
+    margin: 2%;
+
+    border-radius: 4px;
+    border: solid 1px #b0cfe9;
+    background-color: #b0cfe9;
+  }
+
+  button:hover{
+    background-color: #5bacef;
+    transform: scale(1.1);
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+
+  .btn-box p{
+    height: 3vh;
+    width: 8vw;
+    font-size: 0.9em;
+  }
+
+  .btn-box p:hover{
+    color: #5bacef;
+    cursor: pointer;
+  }
+
+  #ltitle{
+    top: 17%;
+  }
+
+  #lbox{
+    top: 20%;
+  }
+
+  #lbtn{
+    top: 25%;
+  }
+
+  #rtitle{
+    top: 17%;
+  }
+
+  #rbox{
+    top: 20%;
+  }
+
+  #rbtn{
+    top: 25%;
+  }
+
+  .pre-box{
+    position: absolute;
+
+    width: 50%;
+    height: 100%;
+    z-index: 10;
+    background-color: #bdf5f3;
+    border-radius: 4px;
+    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s;
+  }
+
+  .pper-box{
+    border: dashed 2px #f6b3bf;
+
+    position: relative;
+    left: 10%;
+    top: 10%;
+  
+    width: 80%;
+    height: 80%;
+
+    border-radius: 5%;
+    transition: all 0.5s;
+}
+
+  .pre-box h2{
+    position: relative;
+    top: 8%;
+    left: 7.5%;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fa90a4;
+  }
+
+  .pre-box h2.before-heidden::before {
+    content: "";
+    position: absolute;
+    left: -2vw;
+    top: -1.9vh;
+
+    width: 0.7vw;
+    height: 9vh;
+    z-index: 10;
+
+    background-color: #f6b3bf;
+
+    opacity: 0;
+  }
+
+  .pre-box h2.before-visable::before {
+    content: "";
+    position: absolute;
+    left: -2vw;
+    top: -1.9vh;
+
+    width: 0.7vw;
+    height: 9vh;
+    z-index: 10;
+
+    background-color: #f6b3bf;
+    opacity: 1;
+  }
+
+  .pre-box h2.after-hidden::after {
+    content: "";
+    position: absolute;
+    right: 1.25vw;
+    top: -2.3vh;
+
+    width: 0.7vw;
+    height: 9vh;
+    z-index: 10;
+    background-color: #f6b3bf;
+
+    opacity: 0;
+  }
+
+  .pre-box h2.after-visible::after {
+    content: "";
+    position: absolute;
+    right: 1.25vw;
+    top: -2.3vh;
+
+    width: 0.7vw;
+    height: 9vh;
+    z-index: 10;
+    background-color: #f6b3bf;
+
+    opacity: 1;
+  }
+
+  #text{
+    position: relative;
+    top: 36%;
+    left: 12%;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #fa90a4;
+  
+  }
+
+  #text.before-heidden::before {
+    content: "";
+    position: absolute;
+    right: 5.2vh;
+    top: -1.5vh;
+
+    width: 0.5vw;
+    height: 7vh;
+    background-color: #f6b3bf;
+    opacity: 0;
+  }
+  
+
+  #text.before-visable::before {
+    content: "";
+    position: absolute;
+    right: 5.2vh;
+    top: -1.5vh;
+
+    width: 0.5vw;
+    height: 7vh;
+    background-color: #f6b3bf;
+    opacity: 1;
+  }
+
+  #text.after-hidden::after {
+    content: "";
+    position: absolute;
+    left: -6.4vh;
+    top: -1.5vh;
+
+    width: 0.5vw;
+    height: 7vh;
+    background-color: #f6b3bf;
+
+    opacity: 0;
+  }
+
+  #text.after-visible::after {
+    content: "";
+    position: absolute;
+    left: -6.4vh;
+    top: -1.5vh;
+
+    width: 0.5vw;
+    height: 7vh;
+    background-color: #f6b3bf;
+
+    opacity: 1;
+  }
+
+  .image{
+    position: relative;
+    top: 20%;
+    left: 25%;
+    width: 22vh;
+    height: 22vh;
+
+    border: solid 1px #f6b3bf;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .image img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  #inserted-html {
+    width: 100%; /* 确保容器占据全屏宽度 */
+    margin: 0 auto; /* 居中 */
+    padding: 0; /* 消除可能的默认内边距 */
+    box-sizing: border-box; /* 确保宽度计算包含内边距和边框 */
+  }
